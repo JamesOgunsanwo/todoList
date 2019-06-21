@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  padding: 10% 10% 10% 10%;
+  background: rgb(182, 234, 251);
+}
+
+h1{
+  font-size: 2vw;
+}
+
+h2 {
+  font-size: 1vw;
+}
+
+.container{
+  background-color: rgba(153, 153, 153, 0.7);
+  padding: 3vw 3vw 3vw 3vw;
+  border-radius: 25px;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 50%;
+  height: 2vw;
+  font-size: 1vw;
+  overflow-x: scroll;
+  padding-left: 1%;
+  margin-bottom: 1%;
+  margin-right: 2px;
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+.complete {
+  border: none;
+  border-bottom: 2px solid green;
+  background-color: rgba(181, 227, 204, 0.5);
+}
+
+button {
+  background-color: rgba(77, 77, 77, 0.5);
+  border: none;
+  color: white;
+  height: 2vw;
+  text-align: center;
+  display: inline-block;
+  font-size: 1vw;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button:Hover {
+  background-color: rgba(0, 138, 230, 0.5);
+}

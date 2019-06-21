@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>My List</h1>
+  <div *ngFor="let task of tasks">
+    <input type="text" readonly value="{{task}}" id="{{task}}" [ngClass]="classValue">
+    <button type="button" class="mat-raised-button" (click)="markAsComplete(task)">Complete <i class="fa fa-check" aria-hidden="true"></i></button>
+    <button type="button" name="delete" class="mat-raised-button" (click)="deleteTask(task)">Trash <i class="fa fa-trash" aria-hidden="true"></i></button>
+  </div>
+  <div>
+    <button type="button" name="delete" class="mat-raised-button" (click)="openAddTask()">Add <i class="fa fa-plus" aria-hidden="true"></i></button>
+    <button type="button" name="ExportTask" class="mat-raised-button" (click)="exportToExcel()">Export <i class="fa fa-file-text-o" aria-hidden="true"></i></button> 
+  </div>
+  <div *ngIf="showCreateForm">
+    <input #taskName type="text" placeholder="Enter item to save" >
+    <button type="button" name="makeAsComplete" class="mat-raised-button" (click)="addTask(taskName.value)">Create <i class="fa fa-plus" aria-hidden="true"></i></button>
+    <button type="button file" name="makeAsComplete" class="mat-raised-button" (click)="closeDialog()">Cancel <i class="fa fa-cross" aria-hidden="true"></i></button>
+  </div>
+</div>
